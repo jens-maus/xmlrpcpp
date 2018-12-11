@@ -1,22 +1,22 @@
-**** XmlRpc++ Library ****
+# XmlRpc++ Library
 This is version 0.7 of XmlRpc++, an implementation of the XmlRpc_protocol
 written in C++, based upon Shilad Sen's excellent py-xmlrpc_library. XmlRpc++
 is designed to make it easy to incorporate XmlRpc client and server support
 into C++ applications. Or use both client and server objects in your app for
 easy peer-to-peer support.
 
-**** Features ****
-- Easy   This library is easy to incorporate into C++ applications. No other 
+# Features
+- *Easy* This library is easy to incorporate into C++ applications. No other 
          libraries are required, other than your system's socket libraries.
          Simple XML parsing and HTTP support are built in.
--  Fast   All IO is non-blocking, so a slow client or network will not slow
-          down the server.
-- Portable Written in standard C++ to the POSIX and Windows sockets APIs.
-           You do need a fairly recent compiler (g++ 3.1 or MSVC++ .Net or MSVC++ 6
-           with the STL_patches.)
-- Free     This library is released under the GNU LGPL.
+- *Fast* All IO is non-blocking, so a slow client or network will not slow
+         down the server.
+- *Portable* Written in standard C++ to the POSIX and Windows sockets APIs.
+             You do need a fairly recent compiler (g++ 3.1 or MSVC++ .Net or MSVC++ 6
+             with the STL_patches.)
+- *Free* This library is released under the GNU LGPL.
 
-**** Changes ****
+# Changes
 - Better handling of fault responses: server methods can throw an
   XmlRpcException to return a fault and XmlRpcClient has a new method to
   test whether the last response was a fault.
@@ -30,7 +30,7 @@ easy peer-to-peer support.
   does not set the result. The default result is an empty string.
 - Doxygen comments in header files and a doc target in the makefile.
 
-**** Installation ****
+# Installation
 There are VC++ 6 and VC++ .Net project files building on Windows. If you are
 using VC++ 6, you should apply SP3 and the fixes at http://www.dinkumware.com/
 vc_fixes.html. Be sure to set the appropriate code generation switches. In
@@ -53,13 +53,13 @@ output). You can also try the XML server validator program (eg, "Validator 80")
 and then attempt to connect to it from http://validator.xmlrpc.com (if you have
 access to the internet and are not behind a firewall etc).
 
-**** Author ****
-Chris_Morley
+# Author
+*Chris_Morley*
 Although no code was re-used, the design and structure of the library is based
 upon the py-xmlrpc library implementation.
 The base64 decoder/encoder is by Konstantin_Pilipchuk.
 
-**** License ****
+# License
 A full copy of the LGPL license is included in the file LICENSE. The source
 code is Copyright (c) 2002-2003 by Chris Morley. This library is free software;
 you can redistribute it and/or modify it under the terms of the GNU Lesser
